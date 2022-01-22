@@ -1,0 +1,196 @@
+
+/***** FONTS *****/
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/GothamMedium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeutraText-Book";
+  src: url("../fonts/NeutraText-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***** MAIN *****/
+
+body {
+  height: 100%;
+  color: #000000;
+  background: #ffffff;
+  font-size: 14px;
+  font-family: "NeutraText-Book";
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1060px;
+}
+
+/***** TYPOS *****/
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "GothamMedium";
+}
+
+/***** HEADER *****/
+
+.header-top {
+  min-height: 115px;
+  background: #000000;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+/***** BANNERS *****/
+
+.large-banner {
+  margin-bottom: 20px;
+}
+
+/***** BLOCK BANNER *****/
+
+.block-banners {
+  margin-bottom: 25px;
+}
+
+.block-banners .row {
+  margin: 0 -0.08%;
+}
+
+.block-banners .col-md-8,
+.block-banners .col-md-4 {
+  padding: 0 0.8%;
+}
+
+.block-banners .col-md-8 {
+  width: 71%;
+}
+
+.block-banners .col-md-4 {
+  width: 29%;
+}
+
+/***** BLOCK TEXT *****/
+
+.block-text {
+  margin-bottom: 25px;
+}
+
+.block-text h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.block-text .block-text-inner {
+  margin-bottom: 20px;
+}
+
+.block-text .block-text-inner p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.block-text button {
+  border: 0;
+  font-size: 22px;
+  background: #d5e4d7;
+}
+
+/***** BLOCK BANNER LITTLE *****/
+
+.block-banners-little {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.block-banner-item {
+  margin-bottom: 50px;
+}
+
+/***** PRODUCTS *****/
+
+.row.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item {
+  margin-bottom: 40px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+}
+
+.product-item .product-brand {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.product-item .product-name {
+  color: #535353;
+  text-align: center;
+  max-width: 180px;
+  margin: 0 auto;
+  height: 60px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 10px 0;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .header-top {
+    min-height: inherit;
+    margin-bottom: 15px;
+  }
+  .header-top .logo {
+    max-width: 180px;
+  }
+  .block-text h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  .block-text .block-text-inner p {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .block-text button {
+    font-size: 18px;
+  }
+  .block-banner-item img {
+    max-width: 250px;
+  }
+  .block-banner-item:first-child img {
+    padding: 10px 25px;
+  }
+}
